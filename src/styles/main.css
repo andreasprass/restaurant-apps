@@ -6,6 +6,20 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.skip-link {
+  position: absolute;
+  height: 44px;
+  top: 1.5em;
+  top: -50px;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 0;
+}
+
+.skip-link:focus{
+  top: 20px;
+}
 
 header{
   display: flex;
@@ -16,19 +30,23 @@ header{
   max-height: 80px;
 }
 h1{
-  margin: auto 0 auto 0;
+  margin: auto 0 auto 5em;
 }
 .anchor{
   display: flex;
+  justify-content: space-around;
   list-style-type: none;
   color: white;
+
 }
 .anchor-item{
-  margin: 15px;
+  margin: 0 0 0 35px;  ;
+  
 }
-a{
+.anchor-link{
   text-decoration: none;
   color: black;
+  font-size:35px;
 }
 img{
   display: block;
@@ -112,10 +130,12 @@ footer{
     font-size: small;
   }
   #hamburger {
-    font-size: 32px;
+    height: 45px;
+    width: 45px;
+    font-size:50px;
+    text-align: center;
     text-decoration: none;
     color: black;
-    display: block;
   }
   #drawer{
     height: 100%;
@@ -158,11 +178,16 @@ footer{
   
   #drawer a {
     text-decoration: none;
+    font-size: 2em;
     color: white;
   }
  
   #hamburger {
-    font-size: 32px;
+    height: 45px;
+    width: 45px;
+    font-size:50px;
+    margin-top: -15px;
+    text-align: center;
     text-decoration: none;
     color: black;
   }
